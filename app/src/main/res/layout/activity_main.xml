@@ -6,13 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/homework_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#050505"
+        android:text="homework_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/homework_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#040303"
+        android:text="homework_2"
+        app:layout_constraintEnd_toEndOf="@+id/homework_1"
+        app:layout_constraintStart_toStartOf="@+id/homework_1"
+        app:layout_constraintTop_toBottomOf="@+id/homework_1" />
+
+    <Button
+        android:id="@+id/homework_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#050404"
+        android:text="homework_3"
+        app:layout_constraintEnd_toEndOf="@+id/homework_2"
+        app:layout_constraintStart_toStartOf="@+id/homework_2"
+        app:layout_constraintTop_toBottomOf="@+id/homework_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
